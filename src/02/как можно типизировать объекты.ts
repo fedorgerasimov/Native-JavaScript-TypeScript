@@ -46,3 +46,4 @@ const student :StudentType = {
     ]
 }
 */
+export {}

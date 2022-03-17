@@ -1,23 +1,21 @@
-export type CityType = {
-    title: string
-    houses : Array<HousesType>
-    governmentBuildings: Array<string>
-    citizensNumber: number
-}
-
-type StreetType = {
+export type StreetType = {
     title: string
 }
-
-type AddressType = {
-    number: string
+export type AddressType = {
+    number: number
     street: StreetType
 }
-
-type HousesType = {
+export type HouseType = {
     buildedAt: number
     repaired: boolean
     address: AddressType
 
 }
+export type CityType = {
+    title: string
+    houses : Array<HouseType>
+    governmentBuildings: Array<string>
+    citizensNumber: number
+}
+
 

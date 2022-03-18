@@ -9,7 +9,7 @@ export type HouseType = {
     buildedAt: number
     repaired: boolean
     address: AddressType
-
+    id?: number   // ? обозначает что такой тип может быть /может нет
 }
 export type CityType = {
     title: string

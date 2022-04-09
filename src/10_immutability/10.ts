@@ -82,8 +82,13 @@ export const updateCompanyTitle1 = (companies: { [key: string]: Array<CompanyTyp
                                    userName: string,
                                    companyId: number,
                                    newTitle: string) => {
-    let companyCopy = {...companies}
-    companyCopy[userName] = companyCopy[userName].map(el => el.id === companyId
+
+    return {
+        ...companies, [userName] : companies[userName].map(el => el.id === companyId
         ? {...el, title: newTitle} : el)
-    return companyCopy
+    }
+    //let companyCopy = {...companies}
+    //companyCopy[userName] = companyCopy[userName].map(el => el.id === companyId
+    //    ? {...el, title: newTitle} : el)
+    //return companyCopy
 }

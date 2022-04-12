@@ -9,7 +9,7 @@ src/6_Callback
 src/App.tsx
 # testing
 /coverage
-
+src/deep copy/Questions.html
 # production
 /build
 

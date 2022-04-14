@@ -92,3 +92,5 @@ export const updateCompanyTitle1 = (companies: { [key: string]: Array<CompanyTyp
     //    ? {...el, title: newTitle} : el)
     //return companyCopy
 }
+
+

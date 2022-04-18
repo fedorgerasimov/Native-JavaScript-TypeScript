@@ -233,37 +233,3 @@ test('update company title', () => {
     expect(copy['Marley']).toBe(companies['Marley'])
     expect(copy[ 'Jameson'][0].title).toBe('Tesla')
 })
-
-
-type StudentType = {
-    id: number
-    name: string
-}
-type FriendsType = {
-    [key: string]: Array<String>
-}
-test('check', () => {
-//Какое значение лежит тут: friends[students[0].id][3]?
-    const students: Array<StudentType> = [
-        {id: 1, name: "Bob"},
-        {id: 2, name: "Alex"},
-        {id: 3, name: "Ann"},
-        {id: 4, name: "Charley"},
-    ]
-
-   const friends: FriendsType = {
-        1: ["Oliver", "Jack", "Oscar",],
-        2: ["Jack", "Lewis", "Thomas",],
-        3: ["William", "Michael", "Lewis",],
-        4: ["Oscar", "James", "William",],
-    }
-
-    expect(Array.isArray(friends)).toBe(false)
-
-
-    expect(friends[3][1]).toBe("Michael")
-    expect(friends[students[1].id][2]).toBe("Thomas")
-    expect(friends[students[0].id][3]).toBe(undefined)
-
-
-})
